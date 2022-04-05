@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+#iphone,
+#chatbubble__1,
+#chatBubble__2,
+#chatBubble__3,
+#chatBubble__4,
+#chatBubble__5,
+#chatBubble__6,
+#chatBubble__7,
+#chatBubble__8,
+#heading,
+#info {
+  visibility: hidden;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+#chatBubble__2,
+#heading {
+  animation-delay: 1s;
+}
+
+#chatBubble__3,
+#info {
+  animation-delay: 2s;
+}
+
+#chatBubble__4 {
+  animation-delay: 3s;
+}
+
+#chatBubble__5 {
+  animation-delay: 4s;
+}
+
+#chatBubble__6 {
+  animation-delay: 5s;
+}
+
+#chatBubble__7 {
+  animation-delay: 6s;
+}
+
+#chatBubble__8 {
+  animation-delay: 7s;
+}

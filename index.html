@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'chat-bg': '#f5f3f7',
+            'gradient-dark': '#8838ff',
+            'gradient-light': '#e942ff',
+            'submit-btn': '#3e2753',
+            'radio-btn-outline': '#e570ff',
+            'heading-primary': '#3e2753',
+            'heading-secondary': '#d89eff',
+            'chat-left': '#321147',
+            'chat-right': '#3c3245',
+            'placeholder': '#e3e3e8',
+            'paragraph': '#444148',
+          },
+          fontFamily: {
+            'base': ['Rubik', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white font-base min-h-screen text-[1.6rem]">
+  <div id="gradient"
+    class="absolute bg-gradient-to-b from-gradient-light to-gradient-dark rounded-b-full right-[50%] w-[100vw] h-[82vh] md:right-[67.4%] lg:w-[29vw] md:h-[87.5vh] lg:right-[73.6%]">
+  </div>
+  <main role="main" class="container relative min-h-screen min-w-full mx-auto py-24 px-12 md:py-0 flex sm:flex-col">
+    <article class="md:flex md:gap-5 lg:gap-20 xl:gap-40 m-auto place-items-center text-[1.3rem]">
+
+      <div id="iphone"
+        class="border-[10px] border-white mx-auto rounded-[2rem] mb-[6.7rem] md:mb-0 shadow-2xl w-[24.7rem] max-h-[50.5rem]">
+        <header
+          class="bg-gradient-to-r from-gradient-dark to-gradient-light h-[6.5rem] pb-6 px-6 relative rounded-b-lg">
+          <div class="bg-white rounded-b-[1.8rem] w-[13rem] h-[1.8rem] mx-auto mt-0">
+          </div>
+          <div class="flex h-full items-center">
+            <div class="flex gap-[0.8rem]">
+              <label for="back__btn" class="self-center">
+                <button id="back__btn" type="button" name="Back" aria-label="Go back" value="<"
+                  class="text-white font-bold">
+                  < </button>
+              </label>
+              <div class="self-center w-10"><img class="border-2 border-white/75 rounded-full" src="./images/avatar.jpg"
+                  width="256" height="256" alt="Samuel Green personal avatar"></div>
+              <div>
+                <p class="mb-[0.5rem] leading-none text-[1.3rem] text-white">Samuel Green</p>
+                <p class="leading-none text-heading-secondary text-sm">Available to Walk</p>
+              </div>
+            </div>
+            <label for="options" class="flex-1 text-right">
+              <button id="options" type="button" name="options" aria-haspopup="true" aria-label="menu-button"
+                class="font-bold hover:text-white text-radio-btn-outline transition-all">⋮</button>
+            </label>
+
+          </div>
+        </header>
+        <section class="bg-chat-bg py-[1rem] px-[0.8rem] text-[0.9rem]">
+          <div id="chatBubble__1" class="bg-placeholder/30 mt-0 mb-[0.8rem] p-[0.6rem] rounded-2xl w-[12.8rem]">
+            <p class="text-chat-left">That sounds great. I’d be happy with that.</p>
+          </div>
+          <div id="chatBubble__2" class="bg-placeholder/30 mb-[1.6rem] p-[0.3rem] rounded-2xl w-[12.8rem]">
+            <p class="text-chat-left">Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div id="chatBubble__3" class="flex justify-evenly ml-auto mr-0 w-[13.6rem] h-16">
+            <img class="rounded-2xl" src="./images/dog-image-1.jpg" alt="Thumbnail image of a dog close-up">
+            <img class="rounded-2xl" src="./images/dog-image-2.jpg"
+              alt="Thumbnail image of a dog posing for the camera">
+            <img class="rounded-2xl" src="./images/dog-image-3.jpg"
+              alt="Thumbnail image of a dog carrying a stick in its mouth image thumbnail">
+          </div>
+          <div id="chatBubble__4"
+            class="ml-auto mr-0 my-[0.8rem] shadow-black/5 shadow-xl p-[0.3rem] rounded-2xl w-[12.8rem]">
+            <p class="text-chat-right">Here are a few pictures. She’s a happy girl!</p>
+          </div>
+          <div id="chatBubble__5"
+            class="mb-[1.6rem] ml-auto mr-0 p-[0.6rem] shadow-black/5 shadow-xl rounded-2xl w-[9rem]">
+            <p class="text-chat-right">Can you make it?</p>
+          </div>
+          <div id="chatBubble__6" class="bg-placeholder/30 p-[0.2rem] rounded-2xl w-[13rem]">
+            <p class="text-chat-left">She looks so happy! The time we discussed works. How long shall I take her out
+              for?
+            </p>
+          </div>
+          <div id="chatBubble__7"
+            class="bg-gradient-to-r from-gradient-light to-gradient-dark my-[0.8rem] p-[0.8rem] flex justify-between rounded-2xl w-[16rem]">
+            <div class="flex gap-4 items-center">
+              <div class="border-2 border-radio-btn-outline rounded-full w-[1.2rem] h-[1.2rem]"></div>
+              <p class="text-white">30 minute walk</p>
+            </div>
+            <p class="font-bold text-lg text-white">$29</p>
+          </div>
+          <div id="chatBubble__8"
+            class="bg-gradient-to-r from-gradient-light to-gradient-dark mb-[1.3rem] p-[0.8rem] flex justify-between rounded-2xl w-[16rem]">
+            <div class="flex gap-4 items-center">
+              <div class="border-2 border-radio-btn-outline rounded-full w-[1.2rem] h-[1.2rem]"></div>
+              <p class="text-white"> 1 hour walk</p>
+            </div>
+            <p class="font-bold text-lg text-white">$49</p>
+          </div>
+          <form>
+            <fieldset class="bg-white flex h-14 items-center px-[0.5rem] rounded-3xl">
+              <label for="message-box" class="h-14 pt-4">
+                <textarea id="message-box" name="compose message" required placeholder="Type a message…"
+                  class="overflow-hidden resize-none text-center text-placeholder"></textarea>
+              </label>
+              <label for="submit-btn" class="flex-1 text-right">
+                <input id="submit-btn" type="button" aria-label="Send message" value=">"
+                  class="bg-submit-btn cursor-pointer font-bold hover:bg-gradient-dark text-center text-white transition-all rounded-full w-10 h-10">
+              </label>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+
+      <section class="text-center max-w-[30.6rem] md:self-center md:text-left md:max-w-[45rem]">
+        <h1 id="heading" class="font-bold mb-8 text-heading-primary text-6xl">Simple booking</h1>
+        <p id="info" class="text-[1.6rem] text-paragraph/75">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to
+          discuss arrangements and make bookings. Once the walk has been completed you can rate
+          your walker and book again all through the chat.
+        </p>
+      </section>
+    </article>
+
+  </main>
+
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer> -->
+</body>
+
+</html>
